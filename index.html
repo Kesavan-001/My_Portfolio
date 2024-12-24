@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Updated color theme */
+        :root {
+            --primary-color: #4f46e5; /* Indigo-600 */
+            --secondary-color: #9333ea; /* Purple-500 */
+            --gradient-bg: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+
+        /* Background Gradient */
+        .bg-gradient {
+            background: var(--gradient-bg);
+        }
+
+        /* Text color adjustments */
+        .text-primary {
+            color: var(--primary-color);
+        }
+
+        .text-secondary {
+            color: var(--secondary-color);
+        }
+
+        /* Smooth hover effects */
+        a {
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        button, .bg-blue-500 {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover, .bg-blue-500:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px); /* Subtle lift effect */
+        }
+
+        .shadow-md {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .shadow-md:hover {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px); /* Lift effect for project cards */
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <a href="https://github.com/BharathkumarB04/" class="text-2xl font-bold text-gray-900">Bharath Kumar's Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="text-gray-700 hover:text-primary">About</a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-primary">Skills</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-primary">Projects</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-primary">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Hello, I'm Bharath Kumar</h1>
+            <p class="mb-8">Aspiring Python Backend Developer</p>
+            <a href="#projects" class="bg-white text-primary px-6 py-3 rounded-full hover:bg-gray-100">Let's See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="pic.jpeg" alt="A professional headshot of the developer" class="rounded-full mx-auto" width="300">
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <h2 class="text-3xl font-bold mb-4 text-primary">About Me</h2>
+                <p class="text-gray-700 mb-4">I am an Aspiring Python Backend developer with a strong foundation in Python and Database management systems.</p>
+                <p class="text-gray-700">I'm enthusiastic about learning new technologies, collaborating on meaningful projects, and contributing to impactful software solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-white py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="shadow-md rounded-lg p-6 text-center">
+                    <i class="fab fa-python text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Python</h3>
+                    <p class="text-gray-700">Experienced in developing Python-based applications with a focus on backend development and automation.</p>
+                </div>
+                <div class="shadow-md rounded-lg p-6 text-center">
+                    <i class="fas fa-database text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Database Management</h3>
+                    <p class="text-gray-700">Proficient in MySQL, SQLite, and database design with optimized queries for performance.</p>
+                </div>
+                <div class="shadow-md rounded-lg p-6 text-center">
+                    <i class="fas fa-server text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Flask & Django</h3>
+                    <p class="text-gray-700">Beginner-level experience with Flask and Django, building dynamic web applications and APIs.</p>
+                </div>
+                <div class="shadow-md rounded-lg p-6 text-center">
+                    <i class="fab fa-git-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Version Control</h3>
+                    <p class="text-gray-700">Familiar with Git and GitHub for code management, collaboration, and version control.</p>
+                </div>
+                <div class="shadow-md rounded-lg p-6 text-center">
+                    <i class="fas fa-code text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Problem Solving</h3>
+                    <p class="text-gray-700">Strong problem-solving skills with experience in implementing algorithms and data structures.</p>
+                </div>
+                <div class="shadow-md rounded-lg p-6 text-center">
+                    <i class="fas fa-pencil-ruler text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Design Thinking</h3>
+                    <p class="text-gray-700">Capable of designing user-centric solutions and prototypes for efficient problem-solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="shadow-md rounded-lg overflow-hidden">
+                    <img src="expenses.ico" alt="Project 1" class="w-full">
+                    <div class="p-4">
+                        <a href="https://github.com/BharathkumarB04/Expense_tracker.git" class="text-xl font-bold mb-2">Expense Tracker</a>
+                        <p class="text-gray-700">It is a simple expense tracker to manage daily expenses and visualize expense reports.</p>
+                    </div>
+                </div>
+                <div class="shadow-md rounded-lg overflow-hidden">
+                    <img src="qrcode.png" alt="Project 2" class="w-full">
+                    <div class="p-4">
+                        <a href="https://github.com/BharathkumarB04/QrCode-Generator" class="text-xl font-bold mb-2">QR Code Generator</a>
+                        <p class="text-gray-700">A basic QR code generator using Python Tkinter for the GUI interface.</p>
+                    </div>
+                </div>
+                <div class="shadow-md rounded-lg overflow-hidden">
+                    <img src="todo.jpg" alt="Project 3" class="w-full">
+                    <div class="p-4">
+                        <a href="https://github.com/BharathkumarB04/Todo_list" class="text-xl font-bold mb-2">Simple Todo list</a>
+                        <p class="text-gray-700">A simple to-do list application using Python and SQLite for task management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-primary">Get In Touch</h2>
+            <p class="text-gray-700 mb-8">I'd love to hear from you! Feel free to drop a message below.</p>
+            <form class="max-w-lg mx-auto" action="https://formspree.io/f/mvgggaka" method="POST">
+                <div class="mb-4">
+                    <input type="text" name="Name" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Your Email" name="Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Your Message" name="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                <button type="submit" class="bg-gradient text-white px-6 py-3 rounded-full hover:bg-purple-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient py-6">
+        <div class="container mx-auto px-4 text-center text-white">
+            <p>&copy; 2024 Bharath Kumar. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
